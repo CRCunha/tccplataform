@@ -40,6 +40,7 @@
     align-items: var(--center);
 
     color: #b8b8b8;
+    font-size: 11pt;
 }
 
 .cardCharts .header .container .btnDownload{

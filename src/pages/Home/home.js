@@ -10,12 +10,12 @@ const Home = () => (
         <NavBar />
         <div className="content">
             <div className="container" id="Custonbar">
-                <CardCharts title="Chart 1"/>
-                <CardCharts title="Chart 2"/>
-                <CardCharts title="Chart 3"/>
-                <CardCharts title="Chart 4"/>
-                <CardCharts title="Chart 5"/>
-                <CardCharts title="Chart 6"/>
+                <CardCharts title="SKU"/>
+                <CardCharts title="LOJA"/>
+                <CardCharts title="ORDEDR"/>
+                <CardCharts title="STOQUE"/>
+                <CardCharts title="DAMAND"/>
+                <CardCharts title="TRANSITO"/>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
 
 const generateRandomValue = ()=>{
-    return (Math.random() * 10 ) + 4;
+    return (Math.random() * 10 ) + 5;
 }
 
 const getData = ()=>{
