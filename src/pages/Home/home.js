@@ -9,7 +9,7 @@ const Home = () => (
     <div className="home">
         <NavBar />
         <div className="content">
-            <div className="container">
+            <div className="container" id="Custonbar">
                 <CardCharts title="Chart 1"/>
                 <CardCharts title="Chart 2"/>
                 <CardCharts title="Chart 3"/>

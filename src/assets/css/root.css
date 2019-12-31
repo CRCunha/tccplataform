@@ -11,5 +11,20 @@
     --nowrap: nowrap;
     --bc-color: #EFEEF1;
     --box-shadow: 0px 12px 1px -4px rgba(0,0,0,0.07);
-    --gradient: linear-gradient(to right top, #845ec2, #7464c8, #6169cd, #4b6ed0, #2c73d2)
+    --gradient: linear-gradient(to right top, #845ec2, #7464c8, #6169cd, #4b6ed0, #2c73d2);
+}
+
+#Custonbar::-webkit-scrollbar-track
+{
+	background-color: #fff;
+}
+
+#Custonbar::-webkit-scrollbar
+{
+	width: 7px;
+}
+
+#Custonbar::-webkit-scrollbar-thumb
+{
+	background-color: #b8b8b8;
 }
