@@ -1,0 +1,80 @@
+.navBar{
+    width: 70px;
+    height: 100vh;
+
+    background-image: var(--gradient);
+}
+
+/* Logo */
+.navBar .logo{
+    width: 100%;
+    height: 60px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-end);
+}
+
+.navBar .logo img{
+    width: 70%;
+}
+
+/* Menu */
+.navBar .menu{
+    width: 100%;
+    height: 550px;
+
+    display: var(--flex);
+    align-items: var(--center);
+}
+
+.navBar .menu .container{
+    width: 100%;
+    height: 80%;
+}
+
+.navBar .menu .container .btnMenu{
+    width: 100%;
+    height: 60px;
+
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+
+    color: var(--bc-color);
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.navBar .menu .container .btnMenu:hover{
+    background-color: #3f3f3f24;
+
+    transition: .2s;
+}
+
+/* Log Out */
+.navBar .logoutContainer{
+    width: 70px;
+    height: 60px;
+
+    position: fixed;
+    bottom: 5px;
+
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+
+    color: var(--bc-color);
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.navBar .logoutContainer:hover{
+    background-color: #3f3f3f24;
+
+    transition: .2s;
+}

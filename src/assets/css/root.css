@@ -1,0 +1,15 @@
+:root {
+    --cover: cover;
+    --flex: flex;
+    --center: center;
+    --flex-end: flex-end;
+    --flex-start: flex-start;
+    --space-evenly: space-evenly;
+    --space-around: space-around;
+    --space-between: space-between;
+    --wrap: wrap;
+    --nowrap: nowrap;
+    --bc-color: #EFEEF1;
+    --box-shadow: 0px 12px 1px -4px rgba(0,0,0,0.07);
+    --gradient: linear-gradient(to right top, #845ec2, #7464c8, #6169cd, #4b6ed0, #2c73d2)
+}
