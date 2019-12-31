@@ -8,8 +8,9 @@ import './home.css'
 const Home = () => (
     <div className="home">
         <NavBar />
-        <div className="content">
-            <div className="container" id="Custonbar">
+        <div className="content" id="Custonbar">
+        <div className="titleHome">Charts</div>
+            <div className="container" >
                 <CardCharts title="SKU"/>
                 <CardCharts title="LOJA"/>
                 <CardCharts title="ORDEDR"/>

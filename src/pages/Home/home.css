@@ -7,6 +7,20 @@
     flex-wrap: var(--wrap);
 }
 
+.home .titleHome{
+    width: 95%;
+    height: 80px;
+
+    margin-bottom: 40px;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--flex-end);
+
+    color: #2c73d2;
+    font-size: 16pt;
+}
+
 /* BASE PARA CONTENT DE TODAS AS PAGES */
     .home .content{
         width: 92%;
@@ -15,8 +29,11 @@
         display: var(--flex);
         justify-content: var(--flex-start);
         align-items: var(--center);
+        flex-wrap: var(--wrap);
 
         padding-left: 30px;
+
+        overflow-y: auto;
     }
 
     .home .content .container{
@@ -25,8 +42,6 @@
 
         display: var(--flex);
         flex-wrap: var(--wrap);
-
-        overflow-y: auto;
     }
 /* BASE PARA CONTENT DE TODAS AS PAGES */
 
