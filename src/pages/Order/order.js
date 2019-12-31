@@ -54,7 +54,7 @@ const Order = () => (
                 <div className="tableHeader">
                     <div className="container">
                         <div className="title">TABLE</div>
-                        <div className="download"><IconButton><CloudDownloadIcon/></IconButton></div>
+                        <div className="download"><IconButton><CloudDownloadIcon style={{color: "#b8b8b8"}}/></IconButton></div>
                     </div>
                 </div>
                 <TableContainer className="tableContent" component={Paper}>

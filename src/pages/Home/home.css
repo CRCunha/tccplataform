@@ -1,0 +1,32 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+
+    display: var(--flex);
+    justify-content: var(--space-between);
+    flex-wrap: var(--wrap);
+}
+
+/* BASE PARA CONTENT DE TODAS AS PAGES */
+    .home .content{
+        width: 92%;
+        height: 100%;
+
+        display: var(--flex);
+        justify-content: var(--flex-start);
+        align-items: var(--center);
+
+        padding-left: 30px;
+    }
+
+    .home .content .container{
+        width: 98%;
+        height: 92%;
+
+        display: var(--flex);
+        flex-wrap: var(--wrap);
+
+        overflow-y: auto;
+    }
+/* BASE PARA CONTENT DE TODAS AS PAGES */
+
