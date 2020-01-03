@@ -1,4 +1,4 @@
-.home {
+.data {
     width: 100vw;
     height: 100vh;
 
@@ -8,7 +8,7 @@
 }
 
 /* BASE PARA CONTENT DE TODAS AS PAGES */
-    .home .titleHome{
+    .data .titleData{
         width: 95%;
         height: 80px;
     
@@ -22,7 +22,7 @@
         font-size: 16pt;
     }
 
-    .home .content{
+    .data .content{
         width: 92%;
         height: 100%;
 
@@ -36,7 +36,7 @@
         overflow-y: auto;
     }
 
-    .home .content .container{
+    .data .content .container{
         width: 98%;
         height: 92%;
 

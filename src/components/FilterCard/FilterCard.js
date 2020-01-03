@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    minWidth: 320,
   },
 }));
 
@@ -50,20 +50,6 @@ export default function FilterCard (props) {
           <DialogTitle>{props.filter}</DialogTitle>
           <DialogContent>
             <form className={classes.container}>
-              <FormControl className={classes.formControl}>
-                <InputLabel htmlFor="demo-dialog-native">Age</InputLabel>
-                <Select
-                  native
-                  value={age}
-                  onChange={handleChange}
-                  input={<Input id="demo-dialog-native" />}
-                >
-                  <option value="" />
-                  <option value={10}>Ten</option>
-                  <option value={20}>Twenty</option>
-                  <option value={30}>Thirty</option>
-                </Select>
-              </FormControl>
               <FormControl className={classes.formControl}>
                 <InputLabel id="demo-dialog-select-label">Age</InputLabel>
                 <Select

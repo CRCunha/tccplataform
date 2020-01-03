@@ -5,8 +5,8 @@ import FilterCard from '../../components/FilterCard/FilterCard'
 
 import Tooltip from '@material-ui/core/Tooltip';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import IconButton from '@material-ui/core/IconButton';
+// import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+// import IconButton from '@material-ui/core/IconButton';
 
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -51,12 +51,12 @@ const Order = () => (
                 </div>
             </div>
             <div className="tables">
-                <div className="tableHeader">
+                {/* <div className="tableHeader">
                     <div className="container">
                         <div className="title">TABLE</div>
                         <div className="download"><IconButton><CloudDownloadIcon style={{color: "#b8b8b8"}}/></IconButton></div>
                     </div>
-                </div>
+                </div> */}
                 <TableContainer className="tableContent" id="Custonbar" component={Paper}>
                     <Table aria-label="simple table">
                         <TableHead>

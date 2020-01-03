@@ -30,9 +30,11 @@ const NavBar = () => (
                         <TrendingUpIcon/>
                     </div>
                 </Link>
-                <div className="btnMenu">
-                    <EqualizerIcon/>
-                </div>
+                <Link to="/Data">
+                    <div className="btnMenu">
+                        <EqualizerIcon/>
+                    </div>
+                </Link>
             </div>
         </div>
         <div className="logoutContainer">
