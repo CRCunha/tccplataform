@@ -59,25 +59,25 @@ const Order = () => (
                 </div> */}
                 <TableContainer className="tableContent" id="Custonbar" component={Paper}>
                     <Table aria-label="simple table">
-                        <TableHead>
+                        <TableHead id='head'>
                             <TableRow>
-                                <TableCell>Dessert (100g serving)</TableCell>
-                                <TableCell align="right">Calories</TableCell>
-                                <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                                <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                                <TableCell id='headContent'>Dessert (100g serving)</TableCell>
+                                <TableCell id='headContent' align="right">Calories</TableCell>
+                                <TableCell id='headContent' align="right">Fat&nbsp;(g)</TableCell>
+                                <TableCell id='headContent' align="right">Carbs&nbsp;(g)</TableCell>
+                                <TableCell id='headContent' align="right">Protein&nbsp;(g)</TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody>
+                        <TableBody> 
                             {rows.map(row => (
                                 <TableRow key={row.name}>
-                                    <TableCell component="th" scope="row">
+                                    <TableCell id="table" component="th" scope="row">
                                         {row.name}
                                     </TableCell>
-                                    <TableCell align="right">{row.calories}</TableCell>
-                                    <TableCell align="right">{row.fat}</TableCell>
-                                    <TableCell align="right">{row.carbs}</TableCell>
-                                    <TableCell align="right">{row.protein}</TableCell>
+                                    <TableCell id="table" align="right">{row.calories}</TableCell>
+                                    <TableCell id="table" align="right">{row.fat}</TableCell>
+                                    <TableCell id="table" align="right">{row.carbs}</TableCell>
+                                    <TableCell id="table" align="right">{row.protein}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

@@ -1,6 +1,6 @@
 .filterCards{
-    width: 280px;
-    height: 65px;
+    width: 230px;
+    height: 55px;
 
     box-shadow: var(--box-shadow);
 
@@ -11,6 +11,9 @@
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
+
+    color: #3f3f3f;
+    font-sinze: 8pt;
 }
 
 .filterCards .buttonOpen{

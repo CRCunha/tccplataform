@@ -51,17 +51,22 @@
 .home .content .container .left{
     width: 25%;
     height: 97%;
-
-    background-color: #fff;
-
-    box-shadow: var(--box-shadow);
 }
 
 .home .content .container .right{
-    width: 70%;
-    height: 97%;
+    width: max-content;
+    height: max-content;
 
     background-color: #fff;
 
     box-shadow: var(--box-shadow);
+
+    padding: 30px;
+
+    font-size: 10pt;
+}
+
+#chart{
+    margin-top: 10px;
+    margin-left:-20px;
 }
