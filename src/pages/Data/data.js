@@ -9,7 +9,7 @@ const Data = () => (
     <div className="data">
         <NavBar />
         <div className="content" id="Custonbar">
-        <div className="titleData">Charts</div>
+        <div className="titleData">General Infos</div>
             <div className="container" >
                 <CardCharts title="SKU"/>
                 <CardCharts title="LOJA"/>

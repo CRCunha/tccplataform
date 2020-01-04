@@ -10,7 +10,8 @@ const Home = () => (
         <div className="content" id="Custonbar">
         <div className="titleHome">Home</div>
             <div className="container" >
-                
+                <div className="left"></div>
+                <div className="right"></div>
             </div>
         </div>
     </div>
