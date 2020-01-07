@@ -18,19 +18,35 @@
 .home .content .left{
     width: 45%;
     height: 100%;
-}
-
-.home .content .left .title{
-    width: 100%;
-    height: 100px;
 
     display: var(--flex);
-    align-items: var(--flex-end);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
 
-    font-size: 14pt;
-    color: #3f3f3f;
+.home .content .left .container{
+    width: 90%;
+    height: 30%;
 
-    padding-left: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.home .content .left .container .Carrosel{
+    width: 100%;
+    height: 100%;
+
+    margin-top: 20px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.home .content .left .container .Carrosel .imagem{
+    width: 100%;
+    margin-left: 110px;
 }
 
 .home .content .right{
