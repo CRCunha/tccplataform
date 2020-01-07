@@ -15,9 +15,11 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => (
     <div className="navBar">
-        <div className="logo">
-            <img src={logo} alt="Logo" />
-        </div>
+        <Link to="/">
+            <div className="logo">
+                <img src={logo} alt="Logo" />
+            </div>
+        </Link>
         <div className="menu">
             <div className="container">
                 <Link to="/">

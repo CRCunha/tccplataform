@@ -7,66 +7,67 @@
     flex-wrap: var(--wrap);
 }
 
-/* BASE PARA CONTENT DE TODAS AS PAGES */
-    .home .titleHome{
-        width: 95%;
-        height: 80px;
-    
-        margin-top: -30px;
+.home .content{
+    width: 94.85%;
+    height: 100%;
 
-        display: var(--flex);
-        justify-content: var(--flex-start);
-        align-items: var(--flex-end);
-    
-        color: #2c73d2;
-        font-size: 16pt;
-    }
+    display: var(--flex);
+    flex-wrap: var(--nowrap);
+}
 
-    .home .content{
-        width: 92%;
-        height: 100%;
+.home .content .left{
+    width: 45%;
+    height: 100%;
+}
 
-        display: var(--flex);
-        justify-content: var(--flex-start);
-        align-items: var(--center);
-        flex-wrap: var(--wrap);
+.home .content .left .title{
+    width: 100%;
+    height: 100px;
 
-        padding-left: 30px;
+    display: var(--flex);
+    align-items: var(--flex-end);
 
-        overflow-y: auto;
-    }
+    font-size: 14pt;
+    color: #3f3f3f;
 
-    .home .content .container{
-        width: 98%;
-        height: 80%;
+    padding-left: 50px;
+}
 
-        margin-top: -30px;
+.home .content .right{
+    width: 65%;
+    height: 100%;
 
-        display: var(--flex);
-        flex-wrap: var(--wrap);
-        justify-content: var(--space-between);
-    }
-/* BASE PARA CONTENT DE TODAS AS PAGES */
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
 
-.home .content .container .left{
+    background-image: var(--gradient);
+}
+
+.home .content .right .container{
+    width: 100%;
+    height: 300px;
+
+    display: var(--flex);
+    flex-wrap: var(--wrap);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.home .content .right .container img{
     width: 25%;
-    height: 97%;
 }
 
-.home .content .container .right{
-    width: max-content;
-    height: max-content;
+.home .content .right .container .name{
+    width: 100%;
+    height: 100px;
 
-    background-color: #fff;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-start);
 
-    box-shadow: var(--box-shadow);
-
-    padding: 30px;
-
-    font-size: 10pt;
-}
-
-#chart{
-    margin-top: 10px;
-    margin-left:-20px;
+    color: #f2f2f2;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 22pt;
 }
