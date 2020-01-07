@@ -4,7 +4,7 @@
 
     display: var(--flex);
     justify-content: var(--space-between);
-    flex-wrap: var(--wrap);
+    flex-wrap: var(--nowrap);
 }
 
 .home .content{
@@ -54,9 +54,10 @@
     align-items: var(--center);
 }
 
-.home .content .right .container img{
-    width: 25%;
+.home .content .right .container .imagem{
+    width: 100%;
 }
+
 
 .home .content .right .container .name{
     width: 100%;
@@ -69,5 +70,5 @@
     color: #f2f2f2;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
-    font-size: 22pt;
+    font-size: 20pt;
 }

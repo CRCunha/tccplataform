@@ -15,8 +15,10 @@
     align-items: var(--flex-end);
 }
 
-.navBar .logo img{
-    width: 65%;
+.navBar .logo .imagem{
+    width: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
 }
 
 /* Menu */

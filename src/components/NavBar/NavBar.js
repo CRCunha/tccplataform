@@ -13,11 +13,15 @@ import EqualizerIcon from '@material-ui/icons/Equalizer';
 //Router
 import { Link } from 'react-router-dom'
 
+//Lazy IMG
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const NavBar = () => (
     <div className="navBar">
         <Link to="/">
             <div className="logo">
-                <img src={logo} alt="Logo" />
+                <LazyLoadImage alt='logo' src={logo} effect="blur" width='65%' className="imagem"/>
             </div>
         </Link>
         <div className="menu">
