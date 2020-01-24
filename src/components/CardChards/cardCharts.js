@@ -4,7 +4,7 @@ import './cardCharts.css'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import IconButton from '@material-ui/core/IconButton';
 
-import { AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
 const generateRandomValue = ()=>{
     return (Math.random() * 5 ) + 6;
@@ -37,13 +37,13 @@ const CardCharts = (props) =>{
                 </div>
             </div>
             <div className="chart">
-                <AreaChart width={350} height={250} data={data}>
-                    <Area type="monotone" dataKey="uv" stroke="#2c73d2" />
+                <LineChart width={350} height={250} data={data}>
+                    <Line type="monotone" dataKey="uv" stroke="#2c73d2" />
                     <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                </AreaChart>
+                </LineChart>
             </div>
         </div>
     )

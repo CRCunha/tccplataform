@@ -5,6 +5,7 @@ import FilterCard from '../../components/FilterCard/FilterCard'
 
 import Tooltip from '@material-ui/core/Tooltip';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import Snackbar from '@material-ui/core/Snackbar';
 // import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 // import IconButton from '@material-ui/core/IconButton';
 
@@ -35,57 +36,75 @@ function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
 }
 
-const Order = () => (
-    <div className="order">
-        <NavBar />
-        <div className="content">
-            <div className="filtros">
-                <div className="tooltipContainer">
-                    <Tooltip className="tooltip" title="Os filtros são responsáveis por aplicar mudanças nas tableas" placement="right"> 
-                        <InfoOutlinedIcon />
-                    </Tooltip>
-                </div>
-                <div className="filtersContainer">
-                    <FilterCard filter="Filter" />
-                    <FilterCard filter="Family"/>
-                </div>
-            </div>
-            <div className="tables">
-                {/* <div className="tableHeader">
-                    <div className="container">
-                        <div className="title">TABLE</div>
-                        <div className="download"><IconButton><CloudDownloadIcon style={{color: "#b8b8b8"}}/></IconButton></div>
+const Order = () => {
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    return(
+        <div className="order" onLoad={handleOpen}>
+            <NavBar />
+            <div className="content">
+                <div className="filtros">
+                    <div className="tooltipContainer">
+                        <Tooltip className="tooltip" title="Os filtros são responsáveis por aplicar mudanças nas tableas" placement="right"> 
+                            <InfoOutlinedIcon />
+                        </Tooltip>
                     </div>
-                </div> */}
-                <TableContainer className="tableContent" id="Custonbar" component={Paper}>
-                    <Table aria-label="simple table">
-                        <TableHead id='head'>
-                            <TableRow>
-                                <TableCell id='headContent'>Dessert (100g serving)</TableCell>
-                                <TableCell id='headContent' align="right">Calories</TableCell>
-                                <TableCell id='headContent' align="right">Fat&nbsp;(g)</TableCell>
-                                <TableCell id='headContent' align="right">Carbs&nbsp;(g)</TableCell>
-                                <TableCell id='headContent' align="right">Protein&nbsp;(g)</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody> 
-                            {rows.map(row => (
-                                <TableRow key={row.name}>
-                                    <TableCell id="table" component="th" scope="row">
-                                        {row.name}
-                                    </TableCell>
-                                    <TableCell id="table" align="right">{row.calories}</TableCell>
-                                    <TableCell id="table" align="right">{row.fat}</TableCell>
-                                    <TableCell id="table" align="right">{row.carbs}</TableCell>
-                                    <TableCell id="table" align="right">{row.protein}</TableCell>
+                    <div className="filtersContainer">
+                        <FilterCard filter="Filter" />
+                        <FilterCard filter="Family"/>
+                    </div>
+                </div>
+                <div className="tables">
+                    {/* <div className="tableHeader">
+                        <div className="container">
+                            <div className="title">TABLE</div>
+                            <div className="download"><IconButton><CloudDownloadIcon style={{color: "#b8b8b8"}}/></IconButton></div>
+                        </div>
+                    </div> */}
+                    <TableContainer className="tableContent" id="Custonbar" component={Paper}>
+                        <Table aria-label="simple table">
+                            <TableHead id='head'>
+                                <TableRow>
+                                    <TableCell id='headContent'>Dessert (100g serving)</TableCell>
+                                    <TableCell id='headContent' align="right">Calories</TableCell>
+                                    <TableCell id='headContent' align="right">Fat&nbsp;(g)</TableCell>
+                                    <TableCell id='headContent' align="right">Carbs&nbsp;(g)</TableCell>
+                                    <TableCell id='headContent' align="right">Protein&nbsp;(g)</TableCell>
                                 </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
+                            </TableHead>
+                            <TableBody> 
+                                {rows.map(row => (
+                                    <TableRow key={row.name}>
+                                        <TableCell id="table" component="th" scope="row">
+                                            {row.name}
+                                        </TableCell>
+                                        <TableCell id="table" align="right">{row.calories}</TableCell>
+                                        <TableCell id="table" align="right">{row.fat}</TableCell>
+                                        <TableCell id="table" align="right">{row.carbs}</TableCell>
+                                        <TableCell id="table" align="right">{row.protein}</TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                </div>
             </div>
+            <Snackbar 
+                open={open} 
+                autoHideDuration={6000}  
+                message="In Progress" 
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'right',
+                }}
+            />
         </div>
-    </div>
-)
+    )
+}
 
 export default Order

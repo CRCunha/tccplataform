@@ -33,7 +33,7 @@
 
         padding-left: 30px;
 
-        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .data .content .container{
